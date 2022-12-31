@@ -22,3 +22,5 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 mkdir ~/dockers
 touch ~/dockers/.env
+
+echo "Installation complete! Now log out and login again..."
