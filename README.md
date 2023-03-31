@@ -12,4 +12,6 @@ rm sudo-install.sh
 ## Install docker on ubuntu
 ```
 curl -o install-docker.sh https://raw.githubusercontent.com/Cangio/linux-utils/main/docker-ubuntu-install.sh
+chmod +x install-docker.sh
+./install-docker.sh
 ```
