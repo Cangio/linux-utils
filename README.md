@@ -8,3 +8,8 @@ chmod +x sudo-install.sh
 ./sudo-install.sh
 rm sudo-install.sh
 ```
+
+## Install docker on ubuntu
+```
+curl -o install-docker.sh https://raw.githubusercontent.com/Cangio/linux-utils/main/docker-install.sh
+```
