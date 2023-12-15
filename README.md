@@ -15,3 +15,10 @@ curl -o install-docker.sh https://raw.githubusercontent.com/Cangio/linux-utils/m
 chmod +x install-docker.sh
 ./install-docker.sh
 ```
+
+## Install docker on debian
+```
+curl -o install-docker.sh https://raw.githubusercontent.com/Cangio/linux-utils/main/docker-debian-install.sh
+chmod +x install-docker.sh
+./install-docker.sh
+```
