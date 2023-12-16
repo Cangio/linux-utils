@@ -20,3 +20,8 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 mkdir ~/dockers
 touch ~/dockers/.env
+
+# Need to implement:
+# https://stackoverflow.com/questions/18215973/how-to-check-if-running-as-root-in-a-bash-script
+# https://stackoverflow.com/questions/3522341/identify-user-in-a-bash-script-called-by-sudo
+# to support automatically both running as sudo or not
