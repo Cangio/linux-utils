@@ -1,6 +1,11 @@
 # linux-utils
 Some useful .sh scripts
 
+Initial commands:
+```
+sudo apt update && sudo apt upgrade -yy && sudo apt install git vim -yy
+```
+
 ## Add sudo package
 ```
 curl -o sudo-install.sh https://raw.githubusercontent.com/Cangio/linux-utils/main/sudo-install.sh
