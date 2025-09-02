@@ -3,7 +3,7 @@ Some useful .sh scripts
 
 Initial commands:
 ```
-sudo apt update && sudo apt upgrade -yy && sudo apt install git vim -yy
+sudo apt update && sudo apt upgrade -yy && sudo apt install git curl vim -yy
 ```
 
 ## Add sudo package
