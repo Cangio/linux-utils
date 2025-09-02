@@ -6,6 +6,11 @@ Initial commands:
 sudo apt update && sudo apt upgrade -yy && sudo apt install git curl vim -yy
 ```
 
+Proxmox Qemu agent:
+```
+sudo apt install qemu-guest-agent
+```
+
 ## Add sudo package
 ```
 curl -o sudo-install.sh https://raw.githubusercontent.com/Cangio/linux-utils/main/sudo-install.sh
