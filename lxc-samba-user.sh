@@ -1,5 +1,32 @@
 #!/bin/bash
 
+################################################################################
+# Samba Setup Script for Debian/Ubuntu Systems
+#
+# Developer: Simone Cangini
+# Email: simone@simonecangini.it
+# Date: 22/01/2026
+#
+# Description:
+#   This script automates the configuration of Samba on Debian and Ubuntu
+#   systems. It is thought to be run in LXC containers as root user. 
+#   It performs the following tasks:
+#   - Detects the operating system (Debian/Ubuntu)
+#   - Checks if Samba is installed, installs it if necessary
+#   - Configures Samba to allow root user login
+#   - Identifies users in /home directory and prompts for user selection
+#   - Sets up Samba password for the selected user
+#   - Creates a share for the user's home directory
+#   - Restarts Samba services to apply changes
+#
+# Usage:
+#   sudo ./setup_samba.sh
+#
+# Requirements:
+#   - Must be run as root
+#   - Debian or Ubuntu operating system
+################################################################################
+
 # Exit on any error
 set -e
 
@@ -30,12 +57,16 @@ echo "Starting Samba configuration..."
 
 # Check if Samba is installed
 if ! command -v smbpasswd &> /dev/null; then
-    echo "Samba is not installed. Installing..."
-    apt-get update
-    apt-get install -y samba
-    echo "Samba installed successfully."
+    echo "================================================"
+    echo "  Installing Samba and dependencies..."
+    echo "  This may take a few moments, please wait."
+    echo "================================================"
+    apt-get update > /dev/null 2>&1
+    apt-get install -y samba > /dev/null 2>&1
+    echo ""
+    echo "✓ Samba installed successfully."
 else
-    echo "Samba is already installed."
+    echo "✓ Samba is already installed."
 fi
 
 # Enable root login in Samba configuration
