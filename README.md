@@ -30,6 +30,12 @@ Mount NFS location:
 sudo mount -t nfs {IP of NFS server}:{folder path on server} /mnt/local-folder
 ```
 
+## LXC Samba
+Install samba on LXC proxmox container and configure to share the non-root user. Both for debian and ubuntu.
+
+```
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Cangio/linux-utils/main/lxc-samba-user.sh)"
+```
 
 ## Install docker on ubuntu
 ```
